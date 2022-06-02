@@ -2,8 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: '<router-outlet></router-outlet>',
+  styles: [
+    `
+      :host {
+        flex: 1;
+      }
+    `
+  ]
 })
 export class AppComponent {
   title = 'MarcoADP.github.io';
